@@ -1,5 +1,11 @@
 package clases;
 
+
+
+/**
+ * @author cristian.barquero
+ * @version 1.0
+ */
 public class Rectangulo {
 	private int nombre;
 	private int id;
@@ -8,6 +14,14 @@ public class Rectangulo {
 	public Rectangulo() {
 		super();
 	}
+	
+	
+	/**
+	 * @param nombre nombre de la figura printea nombre
+	 * @param id identidad de la figura
+	 * @param ladoA tamaño en centimetros del lado printea longitud
+	 * @param ladoB tamaño en centimetros del lado b printea longitud 
+	 */
 	public Rectangulo(int nombre, int id, double ladoA, double ladoB) {
 		super();
 		this.nombre = nombre;
@@ -39,6 +53,7 @@ public class Rectangulo {
 	public void setLadoB(double ladoB) {
 		this.ladoB = ladoB;
 	}
+	
 	@Override
 	public String toString() {
 		return "Rectangulo [nombre=" + nombre + ", id=" + id + ", ladoA=" + ladoA + ", ladoB=" + ladoB + "]";
